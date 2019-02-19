@@ -25,7 +25,7 @@
 .material-card {
     position: relative;
     height: 0;
-    padding-bottom: 223px;
+    padding-bottom: 197px;
     margin-bottom: 6.6em;
 }
 .material-card h2 {
@@ -225,13 +225,15 @@
     transition: all 0.3s;
 }
 .material-card.mc-active .img-container {
-    -webkit-border-radius: 50%;
+    -webkit-clip-path: circle(32.1% at 50% 50%);
+    clip-path: circle(32.1% at 50% 50%);
+   /* -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    border-radius: 50%;
-    left: 0;
+    border-radius: 50%; */
+    left: -23px;
     top: 12px;
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 63px;
     z-index: 20;
 }
 .material-card.mc-active .mc-content {

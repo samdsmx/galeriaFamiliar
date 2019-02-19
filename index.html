@@ -519,6 +519,20 @@
 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script>
+/*
+$.getJSON('http://www.whateverorigin.org/get?url=' + encodeURIComponent('https://goo.gl/photos/Qgh9FEQjAdgrozEr6') + '&callback=?', 
+function(data){
+    console.log(data);
+    alert(jQuery(data.contents).filter('meta[name=og:title]').attr("content"));
+	
+});*/
+/*
+$.ajax('https://opengraph.io/api/1.1/site/' + encodeURIComponent('https://goo.gl/photos/Qgh9FEQjAdgrozEr6') + '?app_id=1a01bb02-7b15-4d33-b7e7-1e01c09948ec')
+  .done(function(data){
+    console.log(data);
+  });
+*/
+
     $(function() {
         $('.material-card > .mc-btn-action').click(function () {
             var card = $(this).parent('.material-card');
