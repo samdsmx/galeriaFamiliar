@@ -1,0 +1,20 @@
+list all links https://photos.google.com/albums
+
+var links = document.getElementsByTagName('A'); 
+var s = ''; 
+for (var i = 0; i< links.length; i++) {
+  if (/\b(album|share)\b/.test(links[i].href)) {
+    var albumName = links[i].children.innerText;
+    s = s + albumName + '\t' + links[i].href + '\n';
+  }
+}
+
+list all shared links 
+
+var links = document.getElementsByTagName('A'); 
+var s = ''; 
+for (var i = 0; i< links.length; i++) {
+  if (/\b(album|share)\b/.test(links[i].href)) {
+    s = s + links[i].innerText + '\t' + links[i].href + '\n';
+  }
+}
