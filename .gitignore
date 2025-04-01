@@ -1,0 +1,18 @@
+# Node.js
+node_modules/
+package-lock.json
+
+# Puppeteer / sesión
+user_data/
+scripts/cookies.json
+
+# OAuth
+scripts/token.json
+scripts/oauth-config.js
+
+# Archivos temporales del sistema
+.DS_Store
+*.log
+
+# Si usas VS Code u otro editor
+.vscode/
